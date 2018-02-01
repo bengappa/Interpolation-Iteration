@@ -76,10 +76,10 @@ def csvToPoint(output_folder, output_name, csv_path_set, sr_set):
 ##
 
 # Variables
-output_folder = r"C:\Users\benjamin.gappa.ONEMARINE\Desktop\Interpolation Iteration"
-output_name = "nested_csv_shapefile"
-csv_path_set = r"C:\Users\benjamin.gappa.ONEMARINE\Desktop\Interpolation Iteration\Edina_TestData_Grid.csv"
-sr_set = arcpy.SpatialReference(4326)
+output_folder = str(arcpy.GetParameterAsText(0))
+output_name = str(arcpy.GetParameterAsText(1))
+csv_path_set = str(arcpy.GetParameterAsText(2))
+sr_set = arcpy.GetParameterAsText(3)
 
 # Run
 csvToPoint(output_folder, output_name, csv_path_set, sr_set)
