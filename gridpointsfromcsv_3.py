@@ -4,7 +4,6 @@
 #       Function reads a CSV of Grid Data and Turns it into a Point Shapefile
 #       Handles Grid CSVs as they come from the Admin Site: Record, Longitude, Latitude, DepthInFeet
 #
-#       Made for the C-MAP Minneapolis QC Team
 #
 #       Benjamin Gappa
 #       2/1/18
